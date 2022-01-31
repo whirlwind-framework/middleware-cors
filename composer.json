@@ -1,0 +1,27 @@
+{
+    "name": "whirlwind-framework/middleware-cors",
+    "description": "Whirlwind framework cors middleware library",
+    "keywords": [
+        "middleware cors"
+    ],
+    "authors": [
+        {
+            "name": "Alexander Stepanenko",
+            "email": "alex.stepanenko@gmail.com"
+        }
+    ],
+    "type": "library",
+    "license": "BSD-3-Clause",
+    "minimum-stability": "dev",
+    "require": {
+        "php": "~7.4||>=8.0",
+        "ext-json": "*",
+        "whirlwind-framework/framework": "*",
+        "neomerx/cors-psr7": "^2.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "Whirlwind\\Middleware\\Cors\\": "src"
+        }
+    }
+}
