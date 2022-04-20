@@ -28,7 +28,7 @@ class CorsMiddleware implements MiddlewareInterface
     {
         $cors = $this->analyzer->analyze($request);
         $type = $cors->getRequestType();
-        if (\in_array($this, [
+        if (\in_array($type, [
             AnalysisResultInterface::ERR_NO_HOST_HEADER,
             AnalysisResultInterface::ERR_ORIGIN_NOT_ALLOWED,
             AnalysisResultInterface::ERR_METHOD_NOT_SUPPORTED,
